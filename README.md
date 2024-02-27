@@ -1,0 +1,10 @@
+- 👋 Hi, I’m @KEPV18
+- 👀 I’m interested in Web designs
+- 🌱 I’m currently learning back end 
+- 💞️ I’m looking to collaborate on Large projects of value to the world
+- 📫 How to reach me
+- 201064444637 whatsapp
+- @kepvv on telegram
+- 
+- 😄 MR:KEPA
+- CEO OF KEPV LIMTED
