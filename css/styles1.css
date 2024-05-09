@@ -1,3 +1,14 @@
+
+
+.work-card p{
+    color: #fff;
+
+}
+.work-card  h4{
+    color: #fff;
+
+}
+
 /* تنسيق الصفحة باللغة العربية */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -10,9 +21,14 @@ body {
 
 .container {
     width: min(100%, 90%);
-    max-width: 840px;
     margin: auto;
     padding: 0 15px;
+    margin: 0%;
+}
+header .container {
+    
+    width: 100%;
+    
 }
 
 /* تنسيق العنوان */
@@ -22,6 +38,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding-top: 0%;
 }
 
 header div {
