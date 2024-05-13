@@ -379,7 +379,6 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #000000; /* أسود للرأس */
 }
 
 nav a {
@@ -397,7 +396,6 @@ nav a:hover, nav a:focus {
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        background-color: #000000; /* أسود للرأس */
     }
 }
 
