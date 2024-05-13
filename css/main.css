@@ -139,6 +139,8 @@ section p {
 footer {
     padding: 20px 0;
     text-align: center;
+    background-color: #E60000; /* أحمر فودافون */
+    color: #FFFFFF;
 }
 
 footer p {
@@ -165,7 +167,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #E60000; /* لون هوفر أحمر فودافون */
+    color: #00a5e6; /* لون هوفر أحمر فودافون */
 }
 
 /* تنسيق قسم اتصل بنا */
