@@ -1,15 +1,20 @@
 @add
+
+
+
+
+
 #about img {
 
     max-width: 20%;
 }
 
 .work-card p{
-    color: #F1B7EA;
+    color: #333333;
 
 }
 .work-card  h4{
-    color: #F1B7EA;
+    color: #333333;
 
 }
 
@@ -18,8 +23,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle, #3c2d57 0%, #1A1347 100%);
-    color: #F1B7EA;
+    background: #FFFFFF; /* خلفية بيضاء */
+    color: #333333; /* نص رمادي داكن */
     width: 100%;
 }
 
@@ -37,8 +42,8 @@ header .container {
 
 /* تنسيق العنوان */
 header {
-    background-color: #694786; /* لون الخلفية */
-    color: #F1B7EA;
+    background-color: #E60000; /* أحمر فودافون */
+    color: #FFFFFF;
     padding: 10px 20px; /* تعديل التبطين لتوفير مساحة أكبر */
     display: flex;
     justify-content: space-between;
@@ -61,9 +66,10 @@ header div {
 }
 
 header h1 {
-    font-size: 18px; /* تصغير حجم الخط للعنوان */
+    font-size: 25px; /* تصغير حجم الخط للعنوان */
     margin: 0; /* إزالة الهامش */
     padding: 0; /* إزالة البطين */
+    color: #FFFFFF;
 }
 
 header img {
@@ -85,11 +91,11 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #F1B7EA;
+    color: #FFFFFF; /* نص أبيض */
     text-decoration: none;
     font-size: 16px;
     position: relative;
-    transition: color 0.3s ease; /* تأثير تغيير لون الرابط */
+    transition: color 0.3s ease; /* تأثير انتقالي ناعم */
 }
 
 nav ul li a::after {
@@ -99,7 +105,7 @@ nav ul li a::after {
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #5D479A;
+    background-color: #CCCCCC; /* خط رمادي فاتح تحت النص عند الهوفر */
     transition: width 0.3s ease-in-out;
 }
 
@@ -108,7 +114,7 @@ nav ul li a:hover::after {
 }
 
 nav ul li a:hover {
-    color: #5D479A;
+    color: #CCCCCC; /* لون هوفر رمادي فاتح */
 }
 
 /* تنسيق المحتوى الرئيسي */
@@ -153,25 +159,26 @@ footer ul li {
 
 footer ul li a {
     text-decoration: none;
-    color: #F1B7EA;
+    color: #FFFFFF;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
-    color: #5D479A;
+    color: #E60000; /* لون هوفر أحمر فودافون */
 }
 
 /* تنسيق قسم اتصل بنا */
 #contact a {
     text-decoration: none;
-    color: #5D479A;
+    color: #FFFFFF;
+    color: #ccdca5;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 #contact a:hover {
-    color: #a486b0;
+    color: #7cf448; /* لون هوفر أخضر فاتح */
 }
 
 /* تنسيق بطاقات العمل */
@@ -183,14 +190,14 @@ footer ul li a:hover {
 }
 
 .work-card {
-    border: 1px solid #a486b0;
+    border: 1px solid #E60000; /* حدود أحمر فودافون */
     border-radius: 8px;
     padding: 15px;
     text-align: center;
     height: auto;
     overflow: hidden;
-    background-color: #1A1347;
-    color: #F1B7EA;
+    background-color: #F5F5F5; /* خلفية رمادي فاتح */
+    color: #333333;
 }
 
 .work-card img {
@@ -224,7 +231,7 @@ footer ul li a:hover {
 .feedback-form,
 .previous-ratings {
     width: 100%;
-    background-color: rgb(43 68 85 / 78%);
+    background-color: #FFFFFF; /* أبيض */
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -251,8 +258,8 @@ footer ul li a:hover {
 .feedback-form button {
     width: 100%;
     padding: 10px;
-    background-color: #5D479A;
-    color: #F1B7EA;
+    background-color: #E60000; /* أحمر فودافون */
+    color: #FFFFFF;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -260,7 +267,7 @@ footer ul li a:hover {
 }
 
 .feedback-form button:hover {
-    background-color: #3c2d57;
+    background-color: #CC0000; /* أحمر داكن عند الهوفر */
 }
 
 .checked {
@@ -331,7 +338,7 @@ footer ul li a:hover {
     }
 }
 
-/* قواعد لل��اشات الكبيرة (أجهزة الكمبيوتر) */
+/* قواع للاات الكبيرة (أجهزة الكمبيوتر) */
 @media (min-width: 1025px) {
     .container {
         padding: 30px;
@@ -349,8 +356,8 @@ footer ul li a:hover {
 }
 
 #lang-toggle {
-            background-color: #5D479A;
-            color: #F1B7EA;
+            background-color: #E60000; /* أحمر فودافون */
+            color: #FFFFFF;
             padding: 10px 20px;
             font-size: 18px;
             border: none;
@@ -360,7 +367,7 @@ footer ul li a:hover {
         }
 
         #lang-toggle:hover {
-            background-color: #3c2d57;
+            background-color: #CC0000; /* أحمر داكن عند الهوفر */
         }
         }
         }
@@ -370,25 +377,25 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #1A1347;
+    background-color: #000000; /* أسود للرأس */
 }
 
 nav a {
-    color: #F1B7EA;
+    color: #FFFFFF;
     text-decoration: none;
     padding: 10px 15px;
     transition: background-color 0.3s;
 }
 
 nav a:hover, nav a:focus {
-    background-color: #0a8542;
+    background-color: #D50000; /* لون هوفر أحمر */
 }
 
 /* تحسين الاستجابة للشاشات المختلفة */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        background-color: #1A1347;
+        background-color: #000000; /* أسود للرأس */
     }
 }
 
@@ -403,10 +410,7 @@ button:hover {
 
 /* استخدام بادئات المتصفحات للتأكد من التوافق */
 .box {
-    display: -webkit-box;  /* Chrome, Safari */
-    display: -moz-box;     /* Firefox */
-    display: -ms-flexbox;  /* IE 10 */
-    display: flex;         /* القياسية الحديثة */
+    display: flex;
 }
 
 /* استخدام Modernizr للكشف عن ميزات المتصفح */
@@ -422,3 +426,29 @@ if (!Modernizr.flexbox) {
     -o-transition: all 0.3s ease; /* Opera */
 }
 
+.header-logo h1 {
+    color: #FFFFFF;
+}
+
+
+a {
+    text-decoration: none; /* إزالة الخط من تحت جميع الروابط */
+}
+.rating {
+    direction: ltr;
+    font-size: 30px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.rating label {
+    color: #c5c5c5; /* لون النجوم الافتراضي */
+}
+
+.rating input[type="radio"] {
+    display: none; /* إخفاء الراديو بوتن */
+}
+
+.rating input[type="radio"]:checked ~ label {
+    color: #ffc800;
+}

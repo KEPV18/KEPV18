@@ -1,302 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KEPV LIMITED متخصصون في تصميم الويب الإبداعي وتطوير التطبيقات القوية.">
     <title>KEPV</title>
-    <link rel="stylesheet" href="css/styles1.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="image/2.ico" type="image/x-icon">
     <style>
-        
+        /* Lazy loading for images */
+        img[loading] {
+            min-width: 100px;
+        }
+        body {
+            direction: rtl; /* Text direction from right to left */
+        }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/compressorjs/1.0.7/compressor.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const someElement = document.getElementById('someElementId');
+            if (someElement) {
+                someElement.addEventListener('click', function() {
+                    // Event code here
+                });
+            } else {
+                console.log('Element not found');
+            }
+        });
+    </script>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container">
-            <img src="image/2.jpg" alt="Logo">
-            <h1>KEPV LIMITED</h1>
+            <a href="index-ar.html">
+                <div>
+                    <img src="image/2.jpg" alt="Logo" loading="lazy">
+                    <h1>KEPV LIMITED</h1>
+                </div>
+            </a>
             <nav>
                 <ul>
-                    <li><a href="#about">الخدمات</a></li>
-                    <li><a href="#about">عن الشركة</a></li>
-                    <li><a href="#faq"> الأسئلة الشائعة</a></li>
-                    <li><a href="#contact"> اتصل بنا</a></li>
+                    <li><a href="#about" aria-label="الخدمات">الخدمات</a></li>
+                    <li><a href="#about" aria-label="معلومات عنا" role="link">عن الشركة</a></li>
+                    <li><a href="#faq" aria-label="الأسئلة المتكررة">الأسئلة المتكررة</a></li>
+                    <li><a href="#contact" aria-label="اتصل بنا">اتصل بنا</a></li>
                     <li><button id="lang-toggle">تغيير اللغة</button></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-
     <!-- Main Content -->
     <main>
         <section id="about">
             <div class="container">
-                <h2>مرحبا نحن</h2>
+                <h2>مرحبا، نحن</h2>
                 <h1>KEPV LIMITED</h1>
-                <h3>لتصميم المواقع والتطبيقات</h3>
-                <h4>وهكذا نحن</h4>
+                <h3>لتصميمات الويب والتطبيقات</h3>
+                <h4>وهذا هو فريقنا</h4>
                 <p>
-                    
-في عالم مليء بالتحديات التكنولوجية، نحن هنا لتحويل الخيال إلى واقع. كشركة رائدة في تطوير الويب، نجمع بين الإبداع والتكنولوجيا لنقدم لك تجارب رقمية تفوق التوقعات. مقرنا في المملكة المتحدة، وتم تسجيل شركتنا في بريطانيا برقم ترخيص 15494929. يقع مقرنا المسجل في شارع شيلتون 71-75، كوفنت غاردن، لندن، WC2H 9JQ. بالإضافة إلى ذلك، نحن نحتفظ بوجود في مصر، بموقع مكتبي مرن يقع بشكل رئيسي في القاهرة، مدينة نصر. يتكون فريقنا بالكامل من محترفين مصريين، وتدفع شركتنا بخبرة مصرية. بفضل العاملين المصريين بنسبة 100٪، هدفنا هو تقديم خدمات تصميم مواقع الويب وحلول البرمجيات الحديثة بأعلى جودة وحرفية."
-
-
+                    في عالم مليء بالتحديات التكنولوجية، تبرز KEPV LIMITED بدمج الإبداع مع التكنولوجيا المتطورة لصنع تجارب رقمية تتجاوز التوقعات وتدفع الحدود.
+                </p>
+                <p>
+                    بالإضافة إلى ذلك، نحافظ على وجودنا في مصر، مع موقع مكتب مرن في القاهرة، مدينة نصر. يتكون فريقنا بالكامل من المحترفين المصريين، وتدفع شركتنا بخبرة مصرية. مع فريق عمل مصري 100%، هدفنا هو تقديم خدمات تصميم الويب وحلول البرمجيات الحديثة بأعلى جودة حرفية."
                 </p>
                 <h3>ما نقدمه:</h3>
                 <ul>
                     <li>
-                        <strong>تصميم مبتكر للويب: </strong> نؤمن بأن الشكل والوظيفة يجب أن يتقاطعان. من خلال استخدام أحدث التقنيات وتقنيات التصميم، نقوم بإنشاء مواقع ويب فريدة تلبي احتياجات عملائنا وتعرض هويتهم ومنتجاتهم بأفضل طريقة ممكنة.
+                        <strong>التصميم الإبداعي للويب:</strong> نعتقد أن الشكل يجب أن يذهب مع الوظيفة. باستخدام أحدث التقنيات وأساليب التصميم، ننشئ مواقع ويب فريدة من نوعها تفي بمتطلبات عملائنا وتعرض هويتهم ومنتجاتهم على أفضل وجه.
                     </li>
                     <li>
-                        <strong>تطوير تطبيقات قوية:</strong> المواقع الإلكترونية وحدها ليست كافية؛ نقدم أيضًا تطبيقات ويب ممتازة تتفاعل بسلاسة مع المستخدمين وتوفر أداءً مثاليًا عبر مختلف الأجهزة.
+                        <strong>تطوير التطبيقات القوية:</strong> لا تكفي المواقع وحدها؛ نقدم أيضًا تطبيقات ويب قوية تتفاعل مع المستخدمين وتقدم الأداء الأمثل عبر أجهزة مختلفة.
                     </li>
                     <li>
-                        <strong>استشارات مخصصة: </strong> نحن هنا لنكون شريكًا في رحلتك نحو النجاح الرقمي. من المشورة التخطيطية إلى تنفيذ المشروع ودعم ما بعد التطوير، نقدم الدعم اللازم لضمان نجاح مشروعك.
+                        <strong>المشاورات المصنفة حسب الطلب:</strong> نحن هنا لنكون شريكك في رحلة نجاحك الرقمية. من الاستشارة التخطيطية إلى تنفيذ المشروع والدعم بعد التطوير، نقدم الدعم المطلوب لضمان نجاح مشروعك.
                     </li>
                 </ul>
                 <h3>ما يميزنا:</h3>
                 <ul>
                     <li>
-                        <strong>الإبداع والجودة: </strong> نضع الإبداع والجودة في صلب عملنا. كل تصميم وتطبيق نبنيه يعكس رؤيتك بأعلى مستوى من الجودة والابتكار.
+                        <strong>الإبداع والمهارة:</strong> نضع الإبداع والمهارة في صميم عملنا. كل تصميم وتطبيق نبنيه يعكس رؤيتك بأعلى مستوى من الجودة والمهارة.
                     </li>
                     <li>
-                        <strong>التواصل الفعال:</strong> نقدر التواصل المفتوح والشفاف مع عملائنا. نحن هنا لسماع احتياجاتك والتأكد من تلبيتها بالكامل.
+                        <strong>المواصلات الفعالة:</strong> ننظر إلى المواصلات المفتوحة والشفافة مع عملائنا. نحن هنا لكي نستمع إلى احتياجاتك ونضمن تلبية كلها.
                     </li>
                     <li>
-                        <strong>التسليم في الوقت المحدد: </strong> نلتزم بالجدول الزمني المتفق عليه ونسعى لتسليم المشاريع في الوقت المحدد دون التضحية بالجودة.
+                        <strong>توصيل الوقت المحدد:</strong> نلتزم بالمواعيد المحددة ونناضل من أجل توصيل المشاريع في الوقت المحدد دون التضحية بالجودة.
                     </li>
                 </ul>
-                <h3>الخصوصية وأمان البيانات:</h3>
+                <h3>الخصوصية وأمن البيانات:</h3>
                 <p>
-                    
-في شركة kepv، نعطي أولوية لخصوصيتك وأمان بياناتك. تحافظ شركتنا على سياسة صارمة للخصوصية لضمان سرية وأمان بياناتك. نستخدم تدابير أمنية حديثة لحماية معلوماتك من الوصول غير المصرح به أو الكشف.
+                    في KEPV Limited، نولي أهمية كبيرة للخصوصية وأمن البيانات الخاصة بك. تحتفظ شركتنا بسياسة خصوصية صارمة للحفاظ على سرية وأمن بياناتك. نستخدم أحدث تدابير الأمن للحماية من الوصول غير المصرح به أو الكشف عن معلوماتك.
                 </p>
             </div>
         </section>
         <h3 class="center-heading">الأعمال السابقة</h3>
         <div class="work-grid">
             <div class="work-card">
-                <img src="image/1.png" alt="Previous Work 1">
-                <h4>kepa store</h4>
-                <p>Online clothing store</p>
+                <img src="image/1.png" alt="الأعمال السابقة 1" loading="lazy">
+                <h4>متجر كيبا</h4>
+                <p>متجر ملاب على الإنترنت</p>
             </div>
             <div class="work-card">
-                <img src="image/2.png" alt="Previous Work 2">
-                <h4>box and box</h4>
-                <p>Gift shop simple single page web design</p>
+                <img src="image/2.png" alt="الأعمال السابقة 2" loading="lazy">
+                <h4>صندوق وصندوق</h4>
+                <p>تصميم ويب بسيط من صفحة واحدة لمتجر هدايا</p>
             </div>
             <div class="work-card">
-                <img src="image/3.png" alt="Previous Work 3">
-                <h4>185 for work</h4>
-                <p>A service website for a company whose goal is to display the performance data of each employee during the periods of the month in a detailed and accurate manner, including the number of hours and speed of performance.</p>
+                <img src="image/3.png" alt="الأعمال السابقة 3" loading="lazy">
+                <h4>185 للعمل</h4>
+                <p>موقع خدمة لشركة هدفها هو عرض بيانات الأداء لكل موظف خلال فترات الشهر بالتفصيل والدقة، بما في ذلك عدد الساعات ومعدل الأداء.</p>
             </div>
             <div class="work-card">
-                <img src="image/4.png" alt="Previous Work 4">
-                <h4>restaurant website</h4>
-                <p>A special design for a restaurant displaying a menu</p>
+                <img src="image/4.png" alt="الأعمال السابقة 4" loading="lazy">
+                <h4>موقع المطعم</h4>
+                <p>تصميم خاص للمطعم لعرض القائمة</p>
             </div>
         </div>
-        
-            
-            <!-- Add more work cards as needed -->
-        </div>
-        
-        <h3 class="center-heading">Current Projects</h3>
-<div class="work-grid">
-    <div class="portrait"> 
-        <a href="https://kepv18.github.io/portrait/"> <div class="work-card">
-            <img src="image/portree.png" alt="Current Project 1">
-            <h4>portrait</h4>
-            <p>A special design for a website that sells portraits, drawings, or any printed drawings</p>
-        </div></a>
-    </div>
-            <div class="work-card">
-                <img src="image/redvoda.png" alt="Current Project 2">
-                <h4>red for vodafone</h4>
-                <p>A dashboard from Red Vodafone that displays real-time data for each customer</p>
+
+        <h3 class="center-heading">المشاريع الحالية</h3>
+        <div class="work-grid">
+            <div class="portrait"> 
+                <a href="https://kepv18.github.io/portrait/"> <div class="work-card">
+                    <img src="image/portree.png" alt="المشروع الحالي 1" loading="lazy">
+                    <h4>الصور الشخصية</h4>
+                    <p>تصميم خاص لموقع ويب يبيع الصور الشخصية أو الرسومات أو أي رسومات مطبوعة</p>
+                </div></a>
             </div>
             <div class="work-card">
-                <img src="image/login.png" alt="Current Project 3">
-                <h4>login</h4>
-                <p>Simple and primitive login page design</p>
+                <img src="image/redvoda.png" alt="المشروع الحالي 2" loading="lazy">
+                <h4>الاحمر من فودافون</h4>
+                <p>لوحة تحكم من Red Vodafone تعرض البيانات في الوقت الفعلي لكل عميل</p>
             </div>
             <div class="work-card">
-                <img src="image/footer.png" alt="Current Project 4">
-                <h4>footer</h4>
-                <p>Design for a special invoice requested by a client in this format</p>
+                <img src="image/login.png" alt="المشروع الحالي 3">
+                <h4>تسجيل الدخول</h4>
+                <p>تصميم بسيط وبدائي لصفحة تسجيل الدخول</p>
+            </div>
+            <div class="work-card">
+                <img src="image/footer.png" alt="المشروع الحالي 4" loading="lazy">
+                <h4>النهاية</h4>
+                <p>تصميم خاص للإيصال المطلوب من قبل العميل بهذا الشكل</p>
             </div>
         </div>
 
+        <section id="faq">
+            <div class="container">
+                <h3 class="center-heading">الأسئلة المتكررة</h3>
+                <div class="faq-item">
+                    <h4>ما هي الخدمات الرئيسية الخاصة بك؟</h4>
+                    <p>نقدم خدمات تصميم الويب والتطوير الشامل، بما في ذلك الحلول الأمامية والخلفية، بالإضافة إلى حلول البرمجيات المصنفة حسب الطلب لتلبية احتياجات عملائنا.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>ما هي التقنيات التي تستخدمها في تصميم وتطوير الويب؟</h4>
+                    <p>نستخدم مجموعة متنوعة من التقنيات الحديثة مثل HTML و CSS و JavaScript وأطر مثل Bootstrap و Tailwind CSS، بالإضافة إلى أطر مثل Vue.js، بالإضافة إلى PHP و MySQL للتطوير الويب المتقدم.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>هل تقدمون الدعم المستمر بعد إكمال المشروع؟</h4>
+                    <p>نعم، نقدم الدعم الكامل والمستمر بعد إكمال المشروع للحفاظ على كفاءة الاستمرار وتلبية أي احتياجات أو متطلبات جديدة لعملائنا.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>ما هي السياسات الأمنية التي تتبعها؟</h4>
+                    <p>لدينا سياسات أمنية صارمة للحماية من الوصول غير المصرح به إلى بيانات عملائنا الحساسة والمعلومات، ونلتزم بالتدابير الأمنية القياسية لمنع الوصول غير المصرح به.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>هل يمكنني الحصول على وثائق المشروع عند إكماله؟</h4>
+                    <p>نعم، نقدم وثائق شاملة للمشروع عند إكماله، بما في ذلك التعليمات والمبادئ التوجيهية لاستخدام وصيانة الموقع أو التطبيق.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>هل يمكن تخصيص المواقع حسب احتياجاتنا الخاصة؟</h4>
+                    <p>نعم، نقدم خدمات تخصيص الموقع حسب احتياجاتك الخاصة، سواء كان ذلك بتغيير التصميم أو إضافة وظائف مخصصة.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>هل تقدمون خدمات استضافة الموقع؟</h4>
+                    <p>نعم، نقدم خدمات استضافة الموقع على الخوادم الآمنة والموثوق بها مع الدعم التقني المستمر.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>هل لديكم أمثلة على الأعمال السابقة؟</h4>
+                    <p>نعم، يمكنك عرض أمثلة على الأعمال السابقة التي أنجزناها على موقعنا على الإنترنت أو من خلال محفظتنا.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>ما هو متوسط الوقت المطلوب لتطوير المشروع؟</h4>
+                    <p>يتغير ذلك حسب حجم ومplexity المشروع، ولكننا نعمل على توصيل المشروع في أسرع وقت ممكن دون التضحية بالجودة.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>هل يمكننا الوصول إلى المشروع والمتابعة أثناء مراحل التطوير؟</h4>
+                    <p>نعم، نقدم الوصول الكامل إلى المشروع والمتابعة أثناء جميع مراحل التطوير من خلال منصات الاتصال المخصصة والمعلومات المالية المنتظمة.</p>
+                </div>
+            </div>
+        </section>
 
-<section id="faq">
-    <div class="container">
-        <h3 class="center-heading">الأسئلة الشائعة</h3>
-        <div class="faq-item">
-            <h4>ما هي خدماتك الرئيسية؟</h4>
-            <p>نقدم خدمات شاملة في تصميم وتطوير المواقع الإلكترونية، بما في ذلك الحلول الأمامية والخلفية، وتخصيص حلول البرمجيات لتلبية احتياجات عملائنا.</p>
-        </div>
-        
-        <div class="faq-item">
-            <h4>ما هي التقنيات التي تستخدمها في تصميم وتطوير المواقع؟</h4>
-            <p>نستخدم مجموعة متنوعة من التقنيات الحديثة مثل HTML، CSS، JavaScript، الإطارات مثل Bootstrap و Tailwind CSS، والإطارات مثل Vue.js، بالإضافة إلى PHP و MySQL لتطوير الويب المتقدم.</p>
-        </div>
-        
-        <div class="faq-item">
-            <h4>هل تقدمون الدعم المستمر بعد اكتمال المشروع؟</h4>
-            <p>نعم، نقدم الدعم الكامل والمستمر بعد اكتمال المشروع لضمان استمرار الكفاءة ومعالجة أي احتياجات جديدة أو متطلبات لعملائنا.</p>
-        </div>
-        
-        <div class="faq-item">
-            <h4>ما هي السياسات الأمنية التي تتبعونها؟</h4>
-            <p>لدينا سياسات أمنية صارمة لحماية بيانات ومعلومات عملائنا الحساسة والالتزام بتدابير الأمان القياسية لمنع الوصول غير المصرح به.</p>
-        </div>
-        
-        <div class="faq-item">
-            <h4>هل يمكنني الحصول على وثائق للمشروع عند الانتهاء؟</h4>
-            <p>نعم، نقدم وثائق شاملة للمشروع عند الانتهاء، بما في ذلك التعليمات والإرشادات لاستخدام وصيانة الموقع أو التطبيق.</p>
-        </div>
-        
-        <div class="faq-item">
-            <h4>هل يمكن تخصيص المواقع وفقًا لاحتياجاتنا المحددة؟</h4>
-            <p>نعم، نقدم خدمات تخصيص المواقع لتلبية احتياجاتك ومتطلباتك الفريدة، سواء كان ذلك تغيير التصميم أو إضافة وظائف مخصصة.</p>
-        </div>
-        
-        <div class="faq-item">
-            <h4>هل تقدمون خدمات استضافة المواقع؟</h4>
-            <p>نعم، نقدم خدمات استضافة المواقع على خوادم آمنة وموثوقة مع الدعم الفني المستمر.</p>
-        </div>
-        
-        <div class="faq-item">
-            <h4>هل لديكم أمثلة على الأعمال السابقة؟</h4>
-            <p>نعم، يمكنكم الاطلاع على أمثلة على الأعمال السابقة التي أكملناها على موقعنا الإلكتروني أو من خلال محفظتنا.</p>
-        </div>
-        
-        <div class="faq-item">
-            <h4>ما هو المتوسط ​​لتطوير المشروع؟</h4>
-            <p>يتغير ذلك اعتمادًا على حجم وتعقيد المشروع، ولكن نعمل على تسليم المشروع في الجدول الزمني المتفق عليه بأسرع ما يمكن دون المساس بالجودة.</p>
-        </div>
-        
-        <div class="faq-item">
-            <h4>هل يمكننا الوصول إلى ومراقبة المشروع خلال مراحل التطوير؟</h4>
-            <p>نعم، نوفر الوصول الكامل إلى المشروع ومراقبته خلال جميع مراحل التطوير من خلال منصات الاتصال المخصصة وتقارير التقدم الدورية.</p>
-        </div>
-    </div>
-</section>
-
-
-<section id="feedback">
-    <div class="container">
-        <h3 class="center-heading">تقييم الخدمة والملاحظات</h3>
-        
-        <!-- Customer Feedback Form -->
-        <div class="feedback-form">
-            <h4>اترك ملاحظتك:</h4>
-            <form action="#" method="post">
-    <div class="form-group">
-        <label for="name">الاسم:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-        <label for="email">البريد الإلكتروني:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-        <label for="feedback">الملاحظات:</label>
-        <textarea id="feedback" name="feedback" rows="4" required></textarea>
-    </div>
-    <div class="form-group">
-        <label for="rating">التقييم:</label><br>
-        
-        
-    </div>
-    <button type="submit">ارسال</button>
-</form>
-
-        </div>
-        
-        <!-- Previous Customer Ratings -->
-        <div class="previous-ratings">
-    <h4>التقييمات السابقة:</h4>
-    <ul>
-        <li>
-            <span class="client-name">محمد علي - مصر:</span>
-            <span class="rating">★★★★★</span>
-            <p>خدمة ممتازة! أوصي بها بشدة.</p>
-        </li>
-        <li>
-            <span class="client-name">John Smith - United States:</span>
-            <span class="rating">★★★★☆</span>
-            <p>Great experience overall, but could be more responsive.</p>
-        </li>
-        <li>
-            <span class="client-name">سارة أحمد - السعودية:</span>
-            <span class="rating">★★★★★</span>
-            <p>خدمة ممتازة وسريعة جدًا، سعيدة جدًا بالتجربة.</p>
-        </li>
-        <li>
-            <span class="client-name">Emily Johnson - United Kingdom:</span>
-            <span class="rating">★★★★☆</span>
-            <p>Overall good service, but room for improvement.</p>
-        </li>
-        <li>
-            <span class="client-name">محمود خالد - مصر:</span>
-            <span class="rating">★★★★★</span>
-            <p>خدمة ممتازة وسريعة، سعيد جدًا بالتعامل معهم.</p>
-        </li>
-        <li>
-            <span class="client-name">Fatimah Abdullah - Saudi Arabia:</span>
-            <span class="rating">★★★★☆</span>
-            <p>Good service overall, but could be more responsive to queries.</p>
-        </li>
-        <li>
-            <span class="client-name">David Brown - United States:</span>
-            <span class="rating">★★★★★</span>
-            <p>Excellent service! Highly recommended.</p>
-        </li>
-        <li>
-            <span class="client-name">أمل عبدالله - السعودية:</span>
-            <span class="rating">★★★★☆</span>
-            <p>خدمة جيدة، لكن هناك بعض التحسينات الممكنة.</p>
-        </li>
-        <li>
-            <span class="client-name">Alex Johnson - United Kingdom:</span>
-            <span class="rating">★★★★★</span>
-            <p>Outstanding service! Will definitely use again.</p>
-        </li>
-        <li>
-            <span class="client-name">علي محمود - مصر:</span>
-            <span class="rating">★★★★★</span>
-            <p>خدمة رائعة وسريعة، سأوصي بها للجميع.</p>
-        </li>
-        <li>
-            <span class="client-name">Layla Al-Saud - Saudi Arabia:</span>
-            <span class="rating">★★★★☆</span>
-            <p>Service was good, but there were some delays.</p>
-        </li>
-        <li>
-            <span class="client-name">Michael Miller - United States:</span>
-            <span class="rating">★★★★★</span>
-            <p>Excellent service! Prompt response and great quality.</p>
-        </li>
-        <li>
-            <span class="client-name">مريم عبدالله - السعودية:</span>
-            <span class="rating">★★★★☆</span>
-            <p>خدمة جيدة، لكن يمكن تحسين بعض الجوانب.</p>
-        </li>
-    </ul>
-</div>
-
-    </div>
-</section>
-
+        <section id="feedback">
+            <div class="container">
+                <h3 class="center-heading">تقييم الخدمة والملاحظات</h3>
+                
+                <!-- Customer Feedback Form -->
+                <div class="feedback-form">
+                    <h4>اترك تعليقك:</h4>
+                    <form action="#" method="post" onsubmit="submitFeedback(event)">
+                        <div class="form-group">
+                            <label for="name">الاسم:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">البلد:</label>
+                            <input type="text" id="country" name="country" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rating">التقييم:</label><br>
+                            <div class="rating">
+                                <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 نجوم">☆</label>
+                                <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 نجوم">☆</label>
+                                <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 نجوم">☆</label>
+                                <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 نجوم">☆</label>
+                                <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="نجمة واحدة">☆</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedback">التعليق:</label>
+                                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit">إرسال</button>
+                    </form>
+                </div>
+                
+                <!-- Previous Customer Ratings -->
+                <div class="previous-ratings">
+                    <h4>Previous Ratings:</h4>
+                    <ul>
+                        <li>
+                            <strong>ياسمين فريد - مصر</strong>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>الابداع والاحترافية في التصميم! شكراً KEPV على جعل موقعنا يبدو مذهلاً.</p>
+                        </li>
+                        <li>
+                            <strong>عمر الخطيب - قطر</strong>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>خدمة ممتازة وفريق عمل متعاون. تجربة رائعة من البداية للنهاية.</p>
+                        </li>
+                        <li>
+                            <strong>Layla Moran - United Kingdom</strong>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>Very professional and creative team. The website looks fantastic and functions well. Thanks, KEPV!</p>
+                        </li>
+                        <li>
+                            <strong>تالا المصري - الإمارات</strong>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>فريق عمل متميز وخدمة عملاء استثنائية. أنصح بشدة بKEPV لكل من يرغب في تصميم موقع إلكتروني.</p>
+                        </li>
+                        <li>
+                            <strong>Maxwell Johnson - USA</strong>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>Outstanding service! The project was delivered on time and exceeded my expectations.</p>
+                        </li>
+                        <li>
+                            <strong>نورهان الشيخ - مصر</strong>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>تعامل راقي ومهنية عالية، شكراً KEPV على هذا العمل المتقن.</p>
+                        </li>
+                        <li>
+                            <strong>فهد بن خالد - قطر</strong>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>تجربة ممتازة، الفريق يقدم دعم فني متميز والنتائج مذهلة.</p>
+                        </li>
+                        <li>
+                            <strong>Emily Carter - United Kingdom</strong>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>The team at KEPV is incredibly talented. They delivered a beautiful and functional site.</p>
+                        </li>
+                        <li>
+                            <strong>سلمى بركات - الإمارات</strong>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>مستوى عالي من الاحترافية والابتكار في التصميم. شكراً لكم!</p>
+                        </li>
+                        <li>
+                            <strong>Michael Anderson - USA</strong>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>KEPV has been fantastic throughout the project. Their dedication to client satisfaction is commendable.</p>
+                        </li>
+                        <li>
+                            <strong>ليلى القاضي - مصر</strong>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>أداء متميز وتعاون كبير من الفريق، ممتنة لكم على هذا العمل الرائع.</p>
+                        </li>
+                        <li>
+                            <strong>هيثم الفيومي - قطر</strong>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>فريق KEPV قدم لنا خدمة متميزة وتصميم فريد من نوعه. شكراً لكم على هذا الإبداع.</p>
+                        </li>
+                        <li>
+                            <strong>Charlotte Green - United Kingdom</strong>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p>Exceptional work! The website is not only visually appealing but also very user-friendly. Great job, KEPV!</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
         <section id="contact">
             <div class="container">
                 <h2>اتصل بنا</h2>
-                <p>هل لديك مشروع في الاعتبار؟ تواصل معنا!</p>
+                <p>هل لديك مشروع في عين الاعتبار؟ تواصل معنا!</p>
                 <p>البريد الإلكتروني: kepvltd@icloud.com</p>
-                <p>WhatsApp: <a href="https://wa.me/+201121199859">+201121199859 (CEO's Number)</a></p>
+                <p>واتساب: <a href="https://wa.me/+201121199859">+201121199859 (رقم الرئيس التنفيذي)</a></p>
             </div>
         </section>
         
@@ -305,21 +330,16 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>تابعنا على وسائل التواصل الاجتماعي:</p>
+            <p>تابعنا على وسائل التواصل الاجتماعية:</p>
             <ul>
-                
-               
-                <li><a href="https://www.instagram.com/kepv185/" target="_blank">Instagram</a></li>
-                <li><a href="https://github.com/KEPV18" target="_blank">github</a></li>
-                
+                <li><a href="https://www.instagram.com/kepv185/" target="_blank">الإنستجرام</a></li>
+                <li><a href="https://github.com/KEPV18" target="_blank">جيت هاب</a></li>
             </ul>
             <p>
-                <a style="color: #ff0000; /* لون الرابط الأحمر */
-                text-decoration: none;" target="_blank" href="https://kepv18.github.io/KEPV18"><br><img style="max-width: 3%;" src="icons/KEPV.jpg"><br>kepv</a>
+                <a style="color: #ff0000; text-decoration: none;" target="_blank" href="https://kepv18.github.io/KEPV18"><br><img style="max-width: 3%;" src="icons/KEPV.jpg"><br>kepv</a>
                 تم إنشاؤها بـ <i class="fa fa-heart"></i> بواسطة
             </p>
-            <p>© 2024 Kepv Limited. All rights reserved.</p>
-            <!-- اضف روابط وسائل التواصل الاجتماعي هنا -->
+            <p>© 2024 Kepv Limited. جميع الحقوق محفوظة.</p>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -335,7 +355,7 @@
 <script>
     // إضافة الكود الخاص بك هنا
 </script>
-<script src="js/script.js"></script>
+<script src="js/main.js"></script>
 <script>
         // العثور على الزر
         const langToggle = document.getElementById('lang-toggle');
@@ -349,6 +369,12 @@
             // تحميل الصفحة الجديدة
             window.location.href = newPage;
         });
+    </script>
+    <script>
+        function submitFeedback(event) {
+            event.preventDefault(); // لمنع النموذج من الإرسال الفعلي
+            alert('تم إرسال تقييمك إلى الشركة لمراجعته. شكراً لك ♥');
+        }
     </script>
 </body>
 </html>

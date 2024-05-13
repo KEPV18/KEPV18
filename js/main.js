@@ -45,16 +45,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// تسجيل Service Worker لتحسين تحميل الصفحة وتوفير المحتوى في حالات عدم الاتصال
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function(err) {
-            console.log('ServiceWorker registration failed: ', err);
-        });
-    });
-}
+
 
 // التبديل بين اللغات عند النقر على زر تغيير اللغة
 document.addEventListener('DOMContentLoaded', function() {
@@ -101,10 +92,6 @@ document.querySelectorAll('img').forEach(img => {
     img.setAttribute('loading', 'lazy');
 });
 
-// تأكيد استخدام HTTPS
-if (location.protocol !== 'https:') {
-    location.replace(`https:${location.href.substring(location.protocol.length)}`);
-}
 
 // تقييد الوصول إلى الصفحات الإدارية
 if (document.location.pathname.includes('/admin')) {
@@ -140,5 +127,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 };
             },
         });
+    });
+});
+
+document.querySelectorAll('.rating input').forEach(item => {
+    item.addEventListener('click', function() {
+        console.log(`تم اختيار تقييم ${this.value} نجوم`);
     });
 });
