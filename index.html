@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="KEPV LIMITED specializes in creative web design and powerful app development.">
     <title>KEPV</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="image/2.ico" type="image/x-icon">
     <style>
         /* تحميل كسول للصور */
@@ -14,36 +14,21 @@
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/compressorjs/1.0.7/compressor.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('img').forEach(img => {
-                new Compressor(img, {
-                    quality: 0.6, // ضبط جودة الصورة
-                    success(result) {
-                        const reader = new FileReader();
-                        reader.readAsDataURL(result);
-                        reader.onloadend = function() {
-                            img.src = reader.result;
-                        };
-                    },
-                });
-            });
-        });
-    </script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container">
             <img src="image/2.jpg" alt="Logo" loading="lazy">
-            <h1>KEPV LIMITED</h1>
+            <h1>KEPV LIMITED: Leading Innovation in Web Design</h1>
             <nav>
                 <ul>
                     <li><a href="#about" aria-label="Services">Services</a></li>
-                    <li><a href="#about" aria-label="About Us">About</a></li>
+                    <li><a href="#about" aria-label="About Us" role="link">About</a></li>
                     <li><a href="#faq" aria-label="Frequently Asked Questions">FAQ</a></li>
                     <li><a href="#contact" aria-label="Contact Us">Contact</a></li>
-                    <li><button id="lang-toggle" aria-label="Change Language">Change language</button></li>
+                    <li><button id="lang-toggle" aria-label="Change Language" role="button">Change language</button></li>
                 </ul>
             </nav>
         </div>
@@ -58,7 +43,7 @@
                 <h3>FOR WEB DESIGNS AND APPS</h3>
                 <h4>AND THIS IS US</h4>
                 <p>
-                    In a world full of technological challenges, we are here to make imagination a reality. As a leading company in web development, we combine creativity and technology to provide you with digital experiences that exceed expectations. Based in the United Kingdom, our company is registered in Britain under license number 15494929. Our registered office address is located at 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ.
+                    In a world full of technological challenges, KEPV LIMITED stands out by blending creativity with cutting-edge technology to craft digital experiences that exceed expectations and push boundaries.
                 </p>
                 <p>
                     Additionally, we maintain a presence in Egypt, with a flexible office location mainly in Cairo, Nasr City. Our team consists entirely of Egyptian professionals, and our company is driven by Egyptian expertise. With 100% Egyptian staff, our goal is to deliver web design services and modern software solutions with the highest quality craftsmanship."
@@ -132,7 +117,10 @@
                 <p>A dashboard from Red Vodafone that displays real-time data for each customer</p>
             </div>
             <div class="work-card">
-                <img src="image/login.png" alt="Current Project 3" loading="lazy">
+                <picture>
+                    <source srcset="image/login.webp" type="image/webp">
+                    <img src="image/login.png" alt="Current Project 3" loading="lazy">
+                </picture>
                 <h4>login</h4>
                 <p>Simple and primitive login page design</p>
             </div>
@@ -262,8 +250,7 @@
             <p>© 2024 Kepv Limited. All rights reserved.</p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/compressorjs/1.0.7/compressor.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/1.2.1/js/glightbox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxy/1.6.1/jquery.ajaxy.min.js"></script>

@@ -121,3 +121,19 @@ document.querySelectorAll('input[type="text"]').forEach(input => {
         this.value = sanitizeInput(this.value);
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('img').forEach(img => {
+        new Compressor(img, {
+            quality: 0.6, // ضبط جودة الصورة
+            success(result) {
+                const reader = new FileReader();
+                reader.readAsDataURL(result);
+                reader.onloadend = function() {
+                    img.src = reader.result;
+                };
+            },
+        });
+    });
+});
