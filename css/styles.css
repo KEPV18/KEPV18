@@ -1,4 +1,4 @@
-
+@add
 #about img {
 
     max-width: 20%;
@@ -37,13 +37,23 @@ header .container {
 
 /* تنسيق العنوان */
 header {
+    background-color: #1bc075; /* لون الخلفية */
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 20px; /* تعديل التبطين لتوفير مساحة أكبر */
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-top: 0%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease; /* تأثير انتقالي ناعم */
+    transition: all 0.3s ease;
+    will-change: transform, opacity;
+}
+
+.small-header {
+    padding: 5px 20px; /* تقليل التبطين للهيدر الصغير */
 }
 
 header div {
@@ -51,15 +61,16 @@ header div {
 }
 
 header h1 {
-    margin: 0;
-    font-size: 24px; 
-    transition: all 0.3s ease-in-out; /* تأثير التكبير */
+    font-size: 18px; /* تصغير حجم الخط للعنوان */
+    margin: 0; /* إزالة الهامش */
+    padding: 0; /* إزالة البطين */
 }
 
 header img {
     width: 40px;
     height: auto;
     margin-right: 10px;
+    position: relative; /* أو يمكنك استخدام position: static; إذا لزم الأمر */
 }
 
 nav ul {
@@ -292,6 +303,48 @@ footer ul li a:hover {
     }
 }
 
+/* قواعد للشاشات الصغيرة (الهواتف) */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    header, main, footer {
+        padding: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+/* قواعد للشاشات المتوسطة (الأجهزة اللوحية) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        padding: 20px;
+    }
+    header, main, footer {
+        padding: 30px;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+/* قواعد للشاشات الكبيرة (أجهزة الكمبيوتر) */
+@media (min-width: 1025px) {
+    .container {
+        padding: 30px;
+    }
+    header{
+        padding: 0px;
+    }
+
+    main, footer {
+        padding: 40px;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+}
 
 #lang-toggle {
             background-color: #1bc075;
@@ -307,3 +360,41 @@ footer ul li a:hover {
         #lang-toggle:hover {
             background-color: #168e5d;
         }
+        }
+        }
+
+/* ت��سين التنقل */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1bc075;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #0a8542;
+}
+
+/* تحسين الاستجابة للشاشات المختلفة */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* تحسين سرعة التفاعل */
+button {
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
