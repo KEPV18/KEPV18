@@ -48,24 +48,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // تسجيل Service Worker لتحسين تحميل الصفحة وتوفير المحتوى في حالات عدم الاتصال
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
-            console.log('Service Worker registered with scope:', registration.scope);
-        }).catch(function(error) {
-            console.log('Service Worker registration failed:', error);
+        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+            console.log('ServiceWorker registration failed: ', err);
         });
     });
 }
 
 // التبديل بين اللغات عند النقر على زر تغيير اللغة
-const langToggle = document.getElementById('lang-toggle');
-
-langToggle.addEventListener('click', function() {
-    const currentPage = window.location.href;
-    const newPage = currentPage.includes('index.html') ? 'index-ar.html' : 'index.html';
-    window.location.href = newPage;
+document.addEventListener('DOMContentLoaded', function() {
+    const langToggle = document.getElementById('lang-toggle');
+    if (langToggle) {
+        langToggle.addEventListener('click', function() {
+            const currentPage = window.location.href;
+            const newPage = currentPage.includes('index.html') ? 'index-ar.html' : 'index.html';
+            window.location.href = newPage;
+        });
+    } else {
+        console.log('العنصر غير موجود');
+    }
 });
 
-// إ��ارة الكاش في Service Worker لتسريع تحميل الصفحة
+// إارة الكاش في Service Worker لتسريع تحميل الصفحة
 self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open('v1').then(function(cache) {

@@ -5,11 +5,11 @@
 }
 
 .work-card p{
-    color: #fff;
+    color: #F1B7EA;
 
 }
 .work-card  h4{
-    color: #fff;
+    color: #F1B7EA;
 
 }
 
@@ -18,8 +18,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle, rgb(135 45 84) 0%, rgb(21 82 85) 100%);
-    color: #ffffff;
+    background: radial-gradient(circle, #3c2d57 0%, #1A1347 100%);
+    color: #F1B7EA;
     width: 100%;
 }
 
@@ -37,8 +37,8 @@ header .container {
 
 /* تنسيق العنوان */
 header {
-    background-color: #1bc075; /* لون الخلفية */
-    color: #fff;
+    background-color: #694786; /* لون الخلفية */
+    color: #F1B7EA;
     padding: 10px 20px; /* تعديل التبطين لتوفير مساحة أكبر */
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@ header {
 }
 
 .small-header {
-    padding: 5px 20px; /* تقليل التبطين للهيدر الصغير */
+    padding: 0px 0px; /* تقليل التبطين للهيدر الصغير */
 }
 
 header div {
@@ -85,7 +85,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #F1B7EA;
     text-decoration: none;
     font-size: 16px;
     position: relative;
@@ -99,7 +99,7 @@ nav ul li a::after {
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #1bc075;
+    background-color: #5D479A;
     transition: width 0.3s ease-in-out;
 }
 
@@ -108,7 +108,7 @@ nav ul li a:hover::after {
 }
 
 nav ul li a:hover {
-    color: #1bc075;
+    color: #5D479A;
 }
 
 /* تنسيق المحتوى الرئيسي */
@@ -153,25 +153,25 @@ footer ul li {
 
 footer ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #F1B7EA;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
-    color: #1bc075;
+    color: #5D479A;
 }
 
 /* تنسيق قسم اتصل بنا */
 #contact a {
     text-decoration: none;
-    color: #1bc075;
+    color: #5D479A;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 #contact a:hover {
-    color: #000;
+    color: #a486b0;
 }
 
 /* تنسيق بطاقات العمل */
@@ -183,12 +183,14 @@ footer ul li a:hover {
 }
 
 .work-card {
-    border: 1px solid #ccc;
+    border: 1px solid #a486b0;
     border-radius: 8px;
     padding: 15px;
     text-align: center;
     height: auto;
     overflow: hidden;
+    background-color: #1A1347;
+    color: #F1B7EA;
 }
 
 .work-card img {
@@ -249,8 +251,8 @@ footer ul li a:hover {
 .feedback-form button {
     width: 100%;
     padding: 10px;
-    background-color: #1bc075;
-    color: #fff;
+    background-color: #5D479A;
+    color: #F1B7EA;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -258,7 +260,7 @@ footer ul li a:hover {
 }
 
 .feedback-form button:hover {
-    background-color: #168e5d;
+    background-color: #3c2d57;
 }
 
 .checked {
@@ -329,7 +331,7 @@ footer ul li a:hover {
     }
 }
 
-/* قواعد للشاشات الكبيرة (أجهزة الكمبيوتر) */
+/* قواعد لل��اشات الكبيرة (أجهزة الكمبيوتر) */
 @media (min-width: 1025px) {
     .container {
         padding: 30px;
@@ -347,8 +349,8 @@ footer ul li a:hover {
 }
 
 #lang-toggle {
-            background-color: #1bc075;
-            color: #fff;
+            background-color: #5D479A;
+            color: #F1B7EA;
             padding: 10px 20px;
             font-size: 18px;
             border: none;
@@ -358,7 +360,7 @@ footer ul li a:hover {
         }
 
         #lang-toggle:hover {
-            background-color: #168e5d;
+            background-color: #3c2d57;
         }
         }
         }
@@ -368,11 +370,11 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #1bc075;
+    background-color: #1A1347;
 }
 
 nav a {
-    color: white;
+    color: #F1B7EA;
     text-decoration: none;
     padding: 10px 15px;
     transition: background-color 0.3s;
@@ -386,6 +388,7 @@ nav a:hover, nav a:focus {
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
+        background-color: #1A1347;
     }
 }
 
