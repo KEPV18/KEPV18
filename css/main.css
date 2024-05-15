@@ -139,7 +139,7 @@ section p {
 footer {
     padding: 20px 0;
     text-align: center;
-    background-color: #E60000; /* أحمر فودافون */
+    background-color: #313030; /* أحمر فودافون */
     color: #FFFFFF;
 }
 
@@ -174,13 +174,13 @@ footer ul li a:hover {
 #contact a {
     text-decoration: none;
     color: #FFFFFF;
-    color: #ccdca5;
+    color: #6a0d56;;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 #contact a:hover {
-    color: #7cf448; /* لون هوفر أخضر فاتح */
+    color: #a31212; /* لون هوفر أخضر فاتح */
 }
 
 /* تنسيق بطاقات العمل */

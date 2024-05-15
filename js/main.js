@@ -8,7 +8,7 @@ function adjustHeader(scrollPos) {
     const logoImage = document.querySelector('header img');
 
     // تطبيق الشروط لتغيير حجم الهيدر وإخفاء الصورة
-    if (scrollPos > 100) {
+    if (scrollPos > 250) {
         header.classList.add('small-header');
         logoImage.style.display = 'none';
         header.style.position = 'fixed';
