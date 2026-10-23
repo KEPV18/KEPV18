@@ -1,74 +1,62 @@
-# 👋 Hi, I'm Ahmed Khaled
+# Ahmed Khaled
 
-### Junior Frontend Developer | JavaScript | TypeScript
+**Operations Manager @ Vezloo** — Cairo, Egypt
 
-I build web applications, dashboards, and business tools with a focus on practical solutions and clean, user-friendly interfaces.
+I build quality systems where none exist. I led Vezloo's **ISO 9001 Quality Management System**
+from the ground up, and I run quality and delivery operations across AI data annotation —
+2D/3D LiDAR, generative AI, and transcription — for international clients.
 
-## 🛠️ Tech Stack
+**Handle:** `kepv185` · **Also:** `KEPV18` (this account), `KEPVV` (X)
 
-**Frontend**
+🌐 **kepv185.vercel.app** — the canonical source for my identity and profiles.
 
-* HTML5
-* CSS3
-* JavaScript (ES6+)
-* TypeScript
-* Tailwind CSS
-* React *(Currently Learning)*
+## What I work on
 
-**Backend & Tools**
+- ISO 9001 QMS design & certification
+- Quality control — LiDAR, image, video, text, audio
+- LLM evaluation & RLHF
+- Annotation guidelines & ambiguity resolution
+- Internal audits, non-conformity, CAPA
+- Client feedback cycles & corrective action
+- Team leadership & training programs
+- Google Sheets dashboards & workflow automation
 
-* Supabase
-* PostgreSQL / SQL
-* REST APIs
-* Git & GitHub
+## Experience
 
-## 🚀 Featured Projects
+| Period | Role | Company |
+|---|---|---|
+| Sep 2025 – Present | Operations Manager | Vezloo |
+| May 2025 – Sep 2025 | AI / ML Lead | Tabby |
+| Sep 2024 – May 2025 | Trainer & Team Lead | MEEG (METI) |
+| Sep 2023 – Aug 2024 | Quality Control Specialist | MEEG (METI) |
 
-### QBase
+## Products I build at Vezloo
 
-**Quality Management System Platform**
+- **[Vezloo Activity Tracker](https://vezloo-admin-dashboard.vercel.app/)** — Chrome extension that
+  records *real* active working time on the annotation platform (mouse/keyboard/click/scroll),
+  tied to each agent's authenticated identity. Live popup + operations dashboard.
+- **[Vezloo LiDAR Training Studio](https://la-train-fd-studio.vercel.app/)** — interactive browser
+  studio for 2D/3D LiDAR annotation: 3D point-cloud viewer, multi-camera projection, polygon and
+  bounding-box tools, per-user progress tracking.
+- **[LiDAR Ops Dashboard](https://lidar-ops-dashboard.vercel.app/)** — team operations console for
+  LiDAR annotation: task lifecycle (first-frame review → final review → QA), per-member and daily
+  statistics, role-based access control.
 
-A web-based QMS platform for managing quality records, forms, and operational workflows.
+## Find me
 
-**Tech:** TypeScript · Supabase · PostgreSQL
+- **Website** — https://kepv185.vercel.app/
+- **LinkedIn** — https://www.linkedin.com/in/kepv185/
+- **X** — https://x.com/kepv185
+- **Instagram** — https://www.instagram.com/kepv185/
+- **Telegram** — https://t.me/kepv185
+- **Email** — akh.dev185@gmail.com
 
-### Masary
+## Projects
 
-**Smart Expense Management Application**
+- [**QBase**](https://github.com/KEPV18/qbase) — Quality Management System platform (TypeScript · Supabase · PostgreSQL)
+- [**Masary**](https://github.com/KEPV18/masary) — Smart expense management for the Egyptian market
+- [**Blue Finance**](https://github.com/KEPV18/blue-finance) — Personal finance dashboard
+- [All repositories](https://github.com/KEPV18?tab=repositories)
 
-A personal finance web application designed for tracking and organizing expenses for the Egyptian market.
-
-**Tech:** TypeScript · Supabase · PostgreSQL
-
-### Blue Finance
-
-**Personal Finance Dashboard**
-
-A data-driven dashboard for monitoring and organizing personal financial information.
-
-**Tech:** JavaScript · HTML · CSS
-
-### QMS Forge
-
-**ISO 9001 Record Management System**
-
-A web-based system for organizing and managing ISO 9001 quality records and workflows.
-
-**Tech:** TypeScript · Supabase · PostgreSQL
-
-## 🌱 Currently Learning
-
-I'm currently improving my React skills and expanding my frontend development knowledge through hands-on projects and practical implementation.
-
-## 💡 What I Enjoy
-
-* Building useful web applications
-* Turning ideas into working products
-* Solving real-world problems with technology
-* Learning new tools by building with them
-
-## 🤝 Let's Connect
-
-* **LinkedIn:** https://linkedin.com/in/kepv185
-* **GitHub:** https://github.com/KEPV18
-* **Email:** [ibnkhaled16@gmail.com](mailto:ibnkhaled16@gmail.com)
+---
+*All accounts above are the same person. [kepv185.vercel.app](https://kepv185.vercel.app/) is the canonical source.*
