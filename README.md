@@ -1,8 +1,8 @@
 # Ahmed Khaled
 
-**Operations Manager @ Vezloo** — Cairo, Egypt
+**Operations Supervisor @ Vezloo** — Cairo, Egypt
 
-I build quality systems where none exist. I led Vezloo's **ISO 9001 Quality Management System**
+I build quality systems and practical web tools, using AI-assisted development. I led Vezloo's **ISO 9001 Quality Management System**
 from the ground up, and I run quality and delivery operations across AI data annotation —
 2D/3D LiDAR, generative AI, and transcription — for international clients.
 
@@ -25,16 +25,15 @@ from the ground up, and I run quality and delivery operations across AI data ann
 
 | Period | Role | Company |
 |---|---|---|
-| Sep 2025 – Present | Operations Manager | Vezloo |
+| Sep 2025 – Present | Operations Supervisor | Vezloo |
 | May 2025 – Sep 2025 | AI / ML Lead | Tabby |
 | Sep 2024 – May 2025 | Trainer & Team Lead | MEEG (METI) |
 | Sep 2023 – Aug 2024 | Quality Control Specialist | MEEG (METI) |
 
-## Products I build at Vezloo
+## Tools I build (AI-assisted development)
 
-- **[Vezloo Activity Tracker](https://vezloo-admin-dashboard.vercel.app/)** — Chrome extension that
-  records *real* active working time on the annotation platform (mouse/keyboard/click/scroll),
-  tied to each agent's authenticated identity. Live popup + operations dashboard.
+- **[Activity Tracker](https://vezloo-admin-dashboard.vercel.app/)** — Chrome extension and dashboard that
+  measure active versus idle time per task. In use, with ongoing reliability work.
 - **[Vezloo LiDAR Training Studio](https://la-train-fd-studio.vercel.app/)** — interactive browser
   studio for 2D/3D LiDAR annotation: 3D point-cloud viewer, multi-camera projection, polygon and
   bounding-box tools, per-user progress tracking.
@@ -54,8 +53,8 @@ from the ground up, and I run quality and delivery operations across AI data ann
 ## Projects
 
 - [**QBase**](https://github.com/KEPV18/qbase) — Quality Management System platform (TypeScript · Supabase · PostgreSQL)
-- [**Masary**](https://github.com/KEPV18/masary) — Smart expense management for the Egyptian market
-- [**Blue Finance**](https://github.com/KEPV18/blue-finance) — Personal finance dashboard
+- [**Masary**](https://github.com/KEPV18/masary) — Expense app for the Egyptian market (early-stage)
+- [**Blue Finance**](https://github.com/KEPV18/blue-finance) — Personal finance dashboard (live demo, synthetic data)
 - [All repositories](https://github.com/KEPV18?tab=repositories)
 
 ---
